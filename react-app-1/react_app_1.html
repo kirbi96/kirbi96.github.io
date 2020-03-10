@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>react_app_1</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <style>
+        .tik-tok{
+            width: 210px;
+            height: 210px;
+            border: solid 2px;
+            margin: 100px auto;
+        }
+        .t-grid{
+            width: 70px;
+            height: 70px;
+            border: solid 1px;
+            float: left;
+            box-sizing: border-box;
+            font-size: 30px;
+            text-align: center;
+        }
+        .new-game{
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, 0);
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+
+</div>
+<script type="text/babel">
+    class App extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                sqares: Array(9).fill(null),
+                count: 0
+            }
+            this.winnerLine = [
+                [0, 1, 2],
+                [3, 4, 5],
+                [6, 7, 8],
+                [0, 3, 6],
+                [1, 4, 7],
+                [2, 5, 8],
+                [0, 4, 8],
+                [2, 4, 6]
+            ]
+            this.clickHandler.bind(this);
+        }
+
+
+        isWinner = () => {
+            let s = (this.state.count % 2 === 0) ? "X" : "0";
+            for (let i = 0; i < 8; i++) {
+                let line = this.winnerLine[i];
+                if (this.state.sqares[line[0]] === s &&
+                    this.state.sqares[line[1]] === s &&
+                    this.state.sqares[line[2]] === s) {
+                    alert(s + " Выйграл");
+                }
+            }
+        }
+
+        clickHandler = e => {
+            let data = e.target.getAttribute('data');
+            let current = this.state.sqares;
+            if (current[data] === null) {
+                current[data] = (this.state.count % 2 === 0) ? "X" : "0";
+                this.setState({count: this.state.count + 1});
+                this.setState({sqares: current});
+            } else {
+                alert("Выберите свободную")
+            }
+            this.isWinner();
+        }
+
+        newGame = () => {
+            this.setState({sqares: Array(9).fill(null)});
+            this.setState({count: 0});
+        }
+
+        render() {
+            return (
+                <div className="App">
+                    <div className="tik-tok">
+                        <div className="t-grid" onClick={this.clickHandler} data="0">{this.state.sqares[0]}</div>
+                        <div className="t-grid" onClick={this.clickHandler} data="1">{this.state.sqares[1]}</div>
+                        <div className="t-grid" onClick={this.clickHandler} data="2">{this.state.sqares[2]}</div>
+                        <div className="t-grid" onClick={this.clickHandler} data="3">{this.state.sqares[3]}</div>
+                        <div className="t-grid" onClick={this.clickHandler} data="4">{this.state.sqares[4]}</div>
+                        <div className="t-grid" onClick={this.clickHandler} data="5">{this.state.sqares[5]}</div>
+                        <div className="t-grid" onClick={this.clickHandler} data="6">{this.state.sqares[6]}</div>
+                        <div className="t-grid" onClick={this.clickHandler} data="7">{this.state.sqares[7]}</div>
+                        <div className="t-grid" onClick={this.clickHandler} data="8">{this.state.sqares[8]}</div>
+                    </div>
+                    <button className="new-game" onClick={this.newGame}> Новая игра</button>
+                </div>
+            );
+        }
+    }
+        ReactDOM.render(
+            <App/>,
+        document.querySelector("#container")
+    );
+
+</script>
+</body>
+</html>
