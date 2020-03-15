@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>CRUD</title>
+    <script src="script.js"></script>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>
+				<form onsubmit="event.preventDefault();formSubmit();" autocomplete="off">
+					<div>
+						<label>Организация</label>
+						<input type="text" name="full_name" id="full_name" required>
+					</div>
+					<div>
+						<label>Адрес</label>
+						<input type="text" name="address" id="address" required>
+					</div>
+					<div>
+						<label>Телефон</label>
+						<input type="text" name="phone" id="phone" required>
+					</div>
+					<div class="form__btn" style="">
+						<input type="submit" value="Отправить">
+						<input type="button" id="json-btn" class="json__active json__block" value="Загрузить данные с JSON" onclick="insertJsonData();">
+						<input type="button" id="local-btn"  value="Проверить последний localStorage" onclick="resetLastStorage();">
+					</div>
+				</form>
+			</td>
+			<td>
+				<table class="list" id="list">
+					<thead>
+						<tr>
+							<th>Организация</th>
+							<th>Адрес</th>
+							<th>Телефон</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<div id="localstorage"></div>
+</body>
+</html>
