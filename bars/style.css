@@ -1,0 +1,33 @@
+body > table {
+	width: 80%;
+}
+table {
+	border-collapse: collapse;
+}
+
+table.list{
+	width: 100%;
+}
+
+td, th{
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even),table.list thead>tr{
+	background-color: #dddddd;
+}
+input {
+	width: 100%;
+	padding: 12px 1px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+a{
+	color: green;
+	cursor: pointer;
+}
