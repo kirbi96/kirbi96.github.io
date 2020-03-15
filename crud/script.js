@@ -94,7 +94,7 @@ function updateRecord(formData){// Добавляем отредактирова
 
 function onDelete(td){ //Удаление строки
 	if (confirm ('Вы действительно хотите удалить?')){
-		let deleteData = {};
+		var deleteData = {};
 		row = td.parentElement.parentElement;//обращение к tr
 		deleteData["full_name"] = list.rows[row.rowIndex].cells[0].innerHTML;
 		deleteData["address"] = list.rows[row.rowIndex].cells[1].innerHTML;
