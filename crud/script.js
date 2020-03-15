@@ -94,9 +94,14 @@ function updateRecord(formData){// Добавляем отредактирова
 
 function onDelete(td){ //Удаление строки
 	if (confirm ('Вы действительно хотите удалить?')){
+		let deleteData = {};
 		row = td.parentElement.parentElement;//обращение к tr
-	document.getElementById('list').deleteRow(row.rowIndex);
-	resetForm();
+		deleteData["full_name"] = list.rows[row.rowIndex].cells[0].innerHTML;
+		deleteData["address"] = list.rows[row.rowIndex].cells[1].innerHTML;
+		deleteData["phone"] = list.rows[row.rowIndex].cells[2].innerHTML;
+		document.getElementById('list').deleteRow(row.rowIndex);
+		localStorage.setItem('localData', JSON.stringify(deleteData)); //забрасываем удаленные элементы в localStorage
+		resetForm();
 	}
 }
 
