@@ -120,7 +120,7 @@ ul{
 .banner__item1 p{
     font-family: 'Gilroy ExtraBold', sans-serif;
      color: white;
-     font-size: 40px;
+     font-size: 50px;
      width: 70%;
      margin-right: 10%;
  }
@@ -321,7 +321,7 @@ ul{
     .banner__item1 p{
         color: white;
         width: 80%;
-        font-size: 6.5vh;
+        font-size: 5vh;
         margin-top: 5vh;
         text-align: center;
         margin-left: auto;
