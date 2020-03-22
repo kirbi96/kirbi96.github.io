@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Сталкер</title>
+    <link rel="stylesheet" href="css/gilroy/gilroy.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- HEADER -->
+<header>
+    <div class="container-fluid">
+        <div class="header__inner">
+            <div class="row header__menu d-flex justify-content-end align-items-center">
+                <div class="menu__left col-lg-7 d-none d-lg-block">
+                    <nav>
+                        <ul class="menu d-flex justify-content-between align-items-center">
+                            <li class="menu__item"><a href="#">Компьютеры</a></li>
+                            <li class="menu__item"><a href="#">Телевидение</a></li>
+                            <li class="menu__item"><a href="#">Фото и видео</a></li>
+                            <li class="menu__item"><a href="#">Канцелярские товары</a></li>
+                            <li class="menu__item"><a href="#">Заказать звонок</a></li>
+                        </ul>
+                      </nav>
+                </div>
+                <div class="menu__right d-lg-flex align-items-center col-lg-3 d-none">
+                    <a href="#" style="padding-right: 10%"><img src="img/menu.png"> </a>
+                    <a href="#">Быстрая заявка</a>
+                </div>
+                <div class="header__toggle d-block d-lg-none" onclick="toggleStyle();">≡</div>
+            </div>
+            <div class="mobile__menu mobile__no justify-content-center d-lg-none " id="mobile__menu">
+                <nav>
+                    <ul class="menu d-flex flex-column align-items-center">
+                        <li class="mobile__item"><a href="#">Компьютеры</a></li>
+                        <li class="mobile__item"><a href="#">Телевидение</a></li>
+                        <li class="mobile__item"><a href="#">Фото и видео</a></li>
+                        <li class="mobile__item"><a href="#">Канцелярские товары</a></li>
+                        <li class="mobile__item"><a href="#">Заказать звонок</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="row header__items d-flex d-lg-flex justify-content-lg-center align-items-lg-center">
+                <div class="header__item col-lg-3 d-lg-flex d-flex justify-content-center justify-content-lg-end">
+                    <img src="img/logo.png">
+                    <div class="header__logo">
+                        <div class="logo__info">
+                            Центр информационных технологий
+                        </div>
+                        <div class="logo__name">
+                            СТАЛКЕР
+                        </div>
+                    </div>
+                </div>
+                <div class="header__item col-lg-3 d-lg-flex d-none justify-content-between">
+                    <img src="img/logo2.png" height="30" width="30">
+                    <div class="header__work">
+                        <div class="work__time">
+                            Режим работы с 8:00 до 19:00
+                        </div>
+                        <div class="work__address">
+                            пгт Апастово, ул. Гагарина, дом 4
+                        </div>
+                    </div>
+                </div>
+                <div class="header__item col-lg-2  d-none d-lg-flex justify-content-lg-between">
+                    <img src="img/logo3.png" height="30" width="30">
+                    <div class="header__phone">
+                        <div class="phone__info">
+                            Позвоните нам!
+                        </div>
+                        <div class="phone__number" >
+                            <a href="tel:+78437621200"> 8 (84376) 21-200</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__social col-lg-2 d-flex justify-content-center justify-content-lg-around">
+                    <a href="#"><img src="img/vk.png" height="15" width="20"></a>
+                    <a href="#"><img src="img/inst.png" height="15" width="20"></a>
+                    <a href="#"><img src="img/wats.png" height="15" width="20"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- BANNER -->
+<div class="banner">
+        <div class="banner__inner d-flex flex-column">
+            <img class="banner__play d-lg-block d-none" src="img/play.png">
+            <div class="banner__items d-lg-flex d-flex justify-content-center">
+                <div class="banner__item1 d-flex justify-content-center d-lg-flex justify-content-lg-end align-items-lg-end">
+                    <p>
+                        Смотрите более 200 каналов <br><span style="font-family: 'Gilroy', sans-serif">от 1500 ₽ в год!</span>
+                    </p>
+                    </div>
+                <div class="banner__item2 d-lg-block d-none"></div>
+                <div class="banner__item3 d-none d-lg-flex justify-content-lg-start align-items-lg-center">
+                    <p>Помощь в установке от нашего специалиста
+                    </p>
+                </div>
+            </div>
+            <div class="banner__items  d-lg-flex d-flex justify-content-center">
+                <div class="banner__item4 d-flex flex-column align-items-center d-lg-flex flex-lg-column justify-content-lg-start align-items-lg-end">
+                  <p> Просто оставьте быструю заявку</p>
+                    <div class="banner__btn d-flex justify-content-center align-items-center">
+                        <a href="#" style="padding-right: 25px"><img src="img/menu.png" height="25" width="15"> </a>
+                        <a href="#">Быстрая заявка</a>
+                    </div>
+                </div>
+                <div class="banner__item5 d-none d-lg-flex justify-content-lg-start align-items-lg-center">
+                    <p>
+                        Обмен старого приёмника на новый формата HD и UHD (ультра высокой чёткости)
+                    </p>
+                </div>
+                <div class="banner__item6 d-lg-block d-none">
+                    <img src="img/bg-banner-2.jpg" width="100%" height="100%">
+                </div>
+            </div>
+        </div>
+
+</div>
+<!-- ABOUT -->
+<div class="about">
+    <div class="container">
+        <div class="about__inner col d-flex flex-column d-lg-flex flex-lg-row justify-content-lg-between">
+            <div class="about__item col-12 col-lg-3">
+                <div class="about__title">
+                    <b>15 лет</b>
+                </div>
+                <p>Работаем для наших клиентов!</p>
+            </div>
+            <div class="about__item col-12 col-lg-3">
+                <div class="about__title">
+                    > 5 000
+                </div>
+                <p>Клиентов за 2018 год обратились к нам</p>
+            </div>
+            <div class="about__item col-12 col-lg-3">
+                <div class="about__title">
+                    80 %
+                </div>
+                <p>Клиентов приходят к нам повторно!</p>
+            </div>
+            <div class="about__item col-12 col-lg-3">
+                <div class="about__title">
+                    > 4 050
+                </div>
+                <p>Пользователей нашего цифрового телевидения</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- SERVICES -->
+<div class="services">
+    <div class="container">
+        <div class="services__inner">
+            <div class="services__item d-lg-flex">
+                <div class="services__img col-lg-6"><img src="img/services1.png" width="100%" height="100%"></div>
+                <div class="services__info col-lg-6 d-lg-flex flex-lg-column justify-content-lg-around">
+                    <div class="services__title">Продажа и ремонт
+                        компьютеров</div>
+                    <p>Комфортный и качественный сервис для тех, кто хочет получить
+                        своевременный и профессиональный ремонт
+                        или имеет желание купить новую технику. </p>
+                    <div class="services__btn d-flex justify-content-center align-items-center">
+                        <a href="#" style="padding-right: 25px"><img src="img/menu.png" height="25" width="15"> </a>
+                        <a href="#">Быстрая заявка</a>
+                    </div>
+                </div>
+            </div>
+            <div class="services__item d-flex flex-column-reverse flex-lg-row d-lg-flex">
+                <div class="services__info  col-lg-6 d-lg-flex flex-lg-column justify-content-lg-around">
+                    <div class="services__title">Спутниковое телевидение</div>
+                    <p>Продажа, установка и настройка спутникового оборудования формата HD и UHD&
+                        Обмен старого приёмника на новый!</p>
+                    <div class="services__btn d-flex justify-content-center align-items-center">
+                        <a href="#" style="padding-right: 25px"><img src="img/menu.png" height="25" width="15"> </a>
+                        <a href="#">Быстрая заявка</a>
+                    </div>
+                </div>
+                <div class="services__img col-lg-6"><img src="img/services2.png" width="100%" height="100%"></div>
+            </div>
+            <div class="services__item d-lg-flex">
+                <div class="services__img col-lg-6"><img src="img/services3.png" width="100%" height="100%"></div>
+                <div class="services__info col-lg-6 d-lg-flex flex-lg-column justify-content-lg-around">
+                    <div class="services__title">Канцелярские товары</div>
+                    <p>Широкий ассортимент канце­лярских товаров и сопутству­ющих принадлежностей для любой
+                        сферы деятельности</p>
+                    <div class="services__btn d-flex justify-content-center align-items-center">
+                        <a href="#" style="padding-right: 25px"><img src="img/menu.png" height="25" width="15"> </a>
+                        <a href="#">Быстрая заявка</a>
+                    </div>
+                </div>
+            </div>
+            <div class="services__item d-flex flex-column-reverse flex-lg-row d-lg-flex">
+                <div class="services__info col-lg-6 d-lg-flex flex-lg-column justify-content-lg-around">
+                    <div class="services__title">Фото и видео услуги</div>
+                    <p>Срочная фотография за 5 мин, все виды цифровой печати высокого качества.
+                        Печать на футболках, брелках и многих видах сувенирной продукции.</p>
+                    <div class="services__btn d-flex justify-content-center align-items-center">
+                        <a href="#" style="padding-right: 25px"><img src="img/menu.png" height="25" width="15"> </a>
+                        <a href="#">Быстрая заявка</a>
+                    </div>
+                </div>
+                <div class="services__img col-lg-6"><img src="img/services4.png" width="100%" height="100%"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FOOTER -->
+<footer>
+        <div class="footer__inner">
+            <div class="footer__info">
+                <div class="footer__line d-none d-lg-block"></div>
+                <div class="footer__items d-lg-flex justify-content-lg-center align-items-lg-center">
+                    <div class="footer__elem1 d-flex flex-column align-items-start d-lg-flex align-items-lg-start flex-lg-column">
+                        <div class="footer__title">Заявка</div>
+                        <div class="footer__item d-flex d-lg-flex justify-content-lg-center align-items-lg-center">
+                            <img src="img/logo3.png" height="30" width="30" style="margin-right: 10px">
+                            <div class="footer__phone">
+                                <div class="phone__number">
+                                    8 (84376) 21-200
+                                </div>
+                                <div class="phone__info">
+                                    Позвоните нам!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__elem d-flex flex-column align-items-start d-lg-flex align-items-lg-start flex-lg-column">
+                        <div class="footer__title ">Адрес</div>
+                        <div class="footer__item d-flex d-lg-flex justify-content-lg-center align-items-lg-center">
+                            <img src="img/logo2.png" height="30" width="30" style="margin-right: 10px">
+                            <div class="footer__work">
+                                <div class="work__address">
+                                    пгт Апастово, ул. Гагарина, дом 4
+                                </div>
+                                <div class="work__time">
+                                    Режим работы с 8:00 до 19:00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__elem d-flex flex-column align-items-start d-lg-flex align-items-lg-start flex-lg-column">
+                        <div class="footer__title ">Реквизиты</div>
+                        <div class="footer__item d-flex d-lg-flex justify-content-lg-center align-items-lg-center">
+                            <img src="img/footer-info.png" height="30" width="30" style="margin-right: 10px">
+                            <div class="footer__work">
+                                <div class="footer__download">
+                                    Скачать
+                                </div>
+                                <div class="download__text">
+                                    Файл (PDF 56 kb)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__elem d-lg-flex flex-lg-column">
+                        <div class="footer__title ">Соц сети</div>
+                        <div class="footer__social d-flex">
+                            <div class="footer__vk">
+                                <img src="img/vk.png" height="15" width="20">
+                            </div>
+                            <div class="footer__inst">
+                                <img src="img/inst.png" height="15" width="20">
+                            </div>
+                            <div class="footer__wats">
+                                <img src="img/wats.png" height="15" width="20">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2276.9031875094333!2d48.51557121590926!3d55.20245288040975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415c67d4cdff0e4d%3A0xe76952c632794160!2z0YPQuy4g0JPQsNCz0LDRgNC40L3QsCwgNCwg0JDQv9Cw0YHRgtC-0LLQviwg0KDQtdGB0L8uINCi0LDRgtCw0YDRgdGC0LDQvSwgNDIyMzUw!5e0!3m2!1sru!2sru!4v1584728614528!5m2!1sru!2sru" width="100%" height="200px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="footer__politics" > Все права защищены </div>
+        </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
