@@ -122,7 +122,7 @@ ul{
      color: white;
      font-size: 50px;
      width: 70%;
-     margin-right: 10%;
+     margin-right: 5%;
  }
 
 .banner__item3 p{
@@ -281,6 +281,9 @@ ul{
 
     .header__social{
         margin-top: 15px;
+    }
+     .header__social a:not(:first-child){
+        margin-left: 15px;
     }
     .header__toggle{
         font-size: 40px;
