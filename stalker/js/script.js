@@ -12,6 +12,7 @@ function toggleStyle(){
 }
 
 function mobileExit(){
+    ++countMob;
     var mob = document.getElementById("mobile__menu");
     mob.classList.add('mobile__no');
 }
