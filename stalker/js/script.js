@@ -10,3 +10,8 @@ function toggleStyle(){
         mob.classList.add('mobile__no');
     }
 }
+
+function mobileExit(){
+    var mob = document.getElementById("mobile__menu");
+    mob.classList.add('mobile__no');
+}

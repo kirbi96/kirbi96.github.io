@@ -2,11 +2,14 @@
     margin: 0;
     padding: 0;
 }
-
 body{
     color: black;
     font-size: 12px;
     font-family: 'Gilroy',  sans-serif;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 ul{
@@ -31,13 +34,13 @@ ul{
    position: relative;
     padding-top: 15px;
     padding-bottom: 15px;
-
+    z-index: 1;
     margin-right: 0;
 }
 .menu__right:before{
     content: "";
     position: absolute;
-    right: -100%;
+    right: -1000%;
     top: 0;
     bottom: 0;
     left: 0;
@@ -107,8 +110,19 @@ ul{
 .banner__item1{
     width: 44%;
     height: 40vh;
-    background-color: rgb(57 89 224);
+    position: relative;
+    z-index: 1;
     opacity: 0.9;
+}
+.banner__item1:before{
+    content: "";
+    position: absolute;
+    left: -1000%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: rgb(57 89 224);
 }
 .banner__item2{
     width: 23%;
@@ -119,10 +133,33 @@ ul{
     height: 40vh;
     background-color: rgb(57 89 224);
     opacity: 0.9;
+    position: relative;
+    z-index: 1;
+}
+.banner__item3:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: -1000%;
+    z-index: -1;
+    background-color: rgb(57 89 224);
 }
 .banner__item4{
     width: 44%;
     height: 40vh;
+    position: relative;
+    z-index: 1;
+}
+.banner__item4:before{
+    content: "";
+    position: absolute;
+    left: -1000%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
     background-color: rgba(50, 70, 156, 0.7);
 }
 .banner__item5{
@@ -133,19 +170,30 @@ ul{
 .banner__item6{
     width: 33%;
     height: 40vh;
+    position: relative;
+z-index: 1;
+}
+.banner__item6:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: -1000%;
+    z-index: -1;
+    background-image: url("../img/bg-banner-2.jpg");
 }
 .banner__item1 p{
     font-family: 'Gilroy ExtraBold', sans-serif;
      color: white;
      font-size: 50px;
-     width: 70%;
-     margin-right: 5%;
+     width: 100%;
  }
 
 .banner__item3 p{
     color: white;
     font-size: 25px;
-    width: 30%;
+    width: 60%;
     margin-left: 10%;
     margin-top: 10%;
 }
@@ -153,14 +201,13 @@ ul{
 .banner__item4 p{
     color: white;
     font-size: 25px;
-    width: 65%;
-    margin-right: 10%;
-    margin-top: 10%;
+    width: 80%;
+    margin-top: 15%;
 }
 .banner__item5 p{
     color: white;
     font-size: 25px;
-    width: 65%;
+    width: 85%;
     margin-left: 10%;
     margin-top: 10%;
 }
@@ -213,7 +260,8 @@ ul{
 
 .services__title{
     font-size: 46px;
-    font-family: 'Gilroy Extra Bold', sans-serif;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: bold;
 }
 
 .services__info p{
@@ -309,7 +357,14 @@ ul{
     }
     .mobile__menu{
         width: 100%;
+        margin-left: 10px;
+        margin-top: 10px;
         display: flex;
+    }
+    .mobile__exit{
+        margin-top: 5px;
+        font-size: 25px;
+        cursor: pointer;
     }
     .mobile__no{
         display: none;
@@ -325,18 +380,43 @@ ul{
     .mobile__item a:hover{
         color: #8c9397;
     }
+    .logo__name{
+        font-size: 16px;
+        margin-top: 0;
+    }
+    .logo__info{
 
+        font-size: 11px;
+    }
 
     /**---- banner ----*/
     .banner__item1{
         width: 100%;
-        height: 40vh;
+        height: 50%;
+        position: relative;
+    }
+    .banner__item1:before{
+        position: absolute;
         background-color: rgba(0, 0, 0, 0.7);
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+
     }
     .banner__item4{
         width: 100%;
-        height: 40vh;
+        height: 50%;
+        position: relative;
+    }
+    .banner__item4:before{
+        position: absolute;
         background-color: rgba(0, 0, 0, 0.7);
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+
     }
     .banner__item1 p{
         color: white;
@@ -365,28 +445,28 @@ ul{
 
     /**---- about ----*/
     .about__inner{
-        margin-top: 75px;
+        margin-top: 15px;
     }
     .about__title{
         text-align: center;
-        font-size: 60px;
+        font-size: 24px;
         color: #3251d2;
     }
 
     .about__item p{
-        margin-top: 30px;
+        margin-top: 22px;
         margin-bottom: 30px;
-        font-size: 22px;
+        font-size: 20px;
         color: #1b172d;
     }
     /**---- services ----*/
     .services__inner{
-        margin-top: 100px;
-        margin-bottom: 50px;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
 
     .services__item{
-        margin-top: 70px;
+        margin-top: 40px;
     }
     .services__btn{
         margin-top: 30px;
@@ -397,12 +477,19 @@ ul{
         margin-right: auto;
     }
     .services__title{
-        font-size: 40px;
+        font-size: 34px;
         text-align: center;
         margin-top: 60px;
+        font-weight: bold;
     }
     .services__info p{
-        margin-top: 20px;
+        margin-top: 18px;
+    }
+    .services__img{
+        width: 50%;
+        height: 50%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     /**---- footer ----*/
@@ -454,11 +541,23 @@ ul{
 @media (min-width: 989.99px) and (max-width: 1300.99px) {
 
     .banner__item1 p{
+        font-family: 'Gilroy ExtraBold', sans-serif;
         color: white;
-        width: 80%;
-        font-size: 36px;
+        font-size: 50px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 530px) {
+    .about__title {
         text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+        font-size: 16px;
+        color: #3251d2;
+    }
+    .about__item p {
+        margin-top: 22px;
+        margin-bottom: 30px;
+        font-size: 14px;
+        color: #1b172d;
     }
 }

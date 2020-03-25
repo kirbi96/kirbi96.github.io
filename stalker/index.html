@@ -11,7 +11,7 @@
 <body>
 <!-- HEADER -->
 <header>
-            <div class="row header__menu d-flex justify-content-end align-items-center">
+            <div class="row header__menu d-none d-lg-flex justify-content-end align-items-center">
                 <div class="container d-flex">
                     <div class="menu__left col-lg-8 d-none d-lg-block">
                         <nav>
@@ -28,13 +28,25 @@
                         <a href="#" style="padding-right: 10%"><img src="img/menu.png"> </a>
                         <a href="#">Быстрая заявка</a>
                     </div>
+                </div>
+            </div>
+                <div class="mobile__header justify-content-between align-items-center d-flex d-lg-none">
+                    <div class="header__item d-flex align-items-end col-3">
+                        <img src="img/logo.png" height="50" width="70">
+                        <div class="header__logo">
+                            <div class="logo__info">
+                                Центр информационных технологий
+                            </div>
+                            <div class="logo__name">
+                                СТАЛКЕР
+                            </div>
+                        </div>
+                    </div>
                     <div class="header__toggle d-block d-lg-none" onclick="toggleStyle();">≡</div>
                 </div>
-
-            </div>
-            <div class="mobile__menu mobile__no justify-content-center d-lg-none " id="mobile__menu">
+            <div class="mobile__menu mobile__no justify-content-around d-lg-none " id="mobile__menu">
                 <nav>
-                    <ul class="menu d-flex flex-column align-items-center">
+                    <ul class="menu d-flex flex-column align-items-start justify-content-start">
                         <li class="mobile__item"><a href="#">Компьютеры</a></li>
                         <li class="mobile__item"><a href="#">Телевидение</a></li>
                         <li class="mobile__item"><a href="#">Фото и видео</a></li>
@@ -42,8 +54,9 @@
                         <li class="mobile__item"><a href="#">Заказать звонок</a></li>
                     </ul>
                 </nav>
+                <div class="mobile__exit" onclick="mobileExit();">X</div>
             </div>
-            <div class="row header__items d-flex d-lg-flex justify-content-lg-center align-items-lg-center">
+            <div class="row header__items d-none d-lg-flex justify-content-lg-center align-items-lg-center">
                 <div class="container d-flex d-lg-flex justify-content-lg-around">
                     <div class="header__item col-lg-3 d-lg-flex d-flex justify-content-around">
                         <img src="img/logo.png">
@@ -90,62 +103,63 @@
 <!-- BANNER -->
 <div class="banner">
         <div class="banner__inner d-flex flex-column">
-            <img class="banner__play d-lg-block d-none" src="img/play.png">
-            <div class="banner__items d-lg-flex d-flex justify-content-center">
-                <div class="banner__item1 d-flex justify-content-center d-lg-flex justify-content-lg-end align-items-lg-end">
-                    <p>
-                        Смотрите более 200 каналов <br><span style="font-family: 'Gilroy', sans-serif">от 1500 &#8381; в год!</span>
-                    </p>
+            <div class="container">
+                <img class="banner__play d-lg-block d-none" src="img/play.png">
+                <div class="banner__items d-lg-flex d-flex justify-content-center  justify-content-lg-start">
+                    <div class="banner__item1 d-flex justify-content-center d-lg-flex justify-content-lg-start align-items-lg-end">
+                        <p>
+                            Смотрите более 200 каналов <br><span style="font-family: 'Gilroy', sans-serif">от 1500 &#8381; в год!</span>
+                        </p>
                     </div>
-                <div class="banner__item2 d-lg-block d-none"></div>
-                <div class="banner__item3 d-none d-lg-flex justify-content-lg-start align-items-lg-center">
-                    <p><b>Помощь в установке</b> от нашего специалиста
-                    </p>
-                </div>
-            </div>
-            <div class="banner__items  d-lg-flex d-flex justify-content-center">
-                <div class="banner__item4 d-flex flex-column align-items-center d-lg-flex flex-lg-column justify-content-lg-start align-items-lg-end">
-                  <p> Просто оставьте быструю заявку</p>
-                    <div class="banner__btn d-flex justify-content-center align-items-center">
-                        <a href="#" style="padding-right: 25px"><img src="img/menu.png" height="25" width="15"> </a>
-                        <a href="#">Быстрая заявка</a>
+                    <div class="banner__item2 d-lg-block d-none"></div>
+                    <div class="banner__item3 d-none d-lg-flex justify-content-lg-start align-items-lg-center">
+                        <p><b>Помощь в установке</b> <br> от нашего специалиста
+                        </p>
                     </div>
                 </div>
-                <div class="banner__item5 d-none d-lg-flex justify-content-lg-start align-items-lg-center">
-                    <p>
-                        <b>Обмен старого приёмника на новый</b> <br> формата HD и UHD (ультра высокой чёткости)
-                    </p>
-                </div>
-                <div class="banner__item6 d-lg-block d-none">
-                    <img src="img/bg-banner-2.jpg" width="100%" height="100%">
+                <div class="banner__items  d-lg-flex d-flex justify-content-center">
+                    <div class="banner__item4 d-flex flex-column align-items-center d-lg-flex flex-lg-column justify-content-lg-start align-items-lg-start">
+                        <p> Просто оставьте быструю заявку</p>
+                        <div class="banner__btn d-flex justify-content-center align-items-center">
+                            <a href="#" style="padding-right: 25px"><img src="img/menu.png" height="25" width="15"> </a>
+                            <a href="#">Быстрая заявка</a>
+                        </div>
+                    </div>
+                    <div class="banner__item5 d-none d-lg-flex justify-content-lg-start align-items-lg-center">
+                        <p>
+                            <b>Обмен старого приёмника на новый</b> <br> формата HD и UHD (ультра высокой чёткости)
+                        </p>
+                    </div>
+                    <div class="banner__item6 d-lg-block d-none">
+                    </div>
                 </div>
             </div>
-        </div>
 
+        </div>
 </div>
 <!-- ABOUT -->
 <div class="about">
     <div class="container">
-        <div class="about__inner col d-flex flex-column d-lg-flex flex-lg-row justify-content-lg-between">
-            <div class="about__item col-12 col-lg-3">
+        <div class="about__inner col d-flex  d-lg-flex flex-lg-row justify-content-lg-between">
+            <div class="about__item col-3 col-lg-3">
                 <div class="about__title">
                     <b>15 лет</b>
                 </div>
                 <p>Работаем для наших клиентов!</p>
             </div>
-            <div class="about__item col-12 col-lg-3">
+            <div class="about__item col-3 col-lg-3">
                 <div class="about__title">
                     > 5 000
                 </div>
                 <p>Клиентов за 2018 год обратились к нам</p>
             </div>
-            <div class="about__item col-12 col-lg-3">
+            <div class="about__item col-3 col-lg-3">
                 <div class="about__title">
                     80 %
                 </div>
                 <p>Клиентов приходят к нам повторно!</p>
             </div>
-            <div class="about__item col-12 col-lg-3">
+            <div class="about__item col-3 col-lg-3">
                 <div class="about__title">
                     > 4 050
                 </div>
