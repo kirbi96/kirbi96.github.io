@@ -11,25 +11,26 @@
 <body>
 <!-- HEADER -->
 <header>
-    <div class="container-fluid">
-        <div class="header__inner">
             <div class="row header__menu d-flex justify-content-end align-items-center">
-                <div class="menu__left col-lg-7 d-none d-lg-block">
-                    <nav>
-                        <ul class="menu d-flex justify-content-between align-items-center">
-                            <li class="menu__item"><a href="#">Компьютеры</a></li>
-                            <li class="menu__item"><a href="#">Телевидение</a></li>
-                            <li class="menu__item"><a href="#">Фото и видео</a></li>
-                            <li class="menu__item"><a href="#">Канцелярские товары</a></li>
-                            <li class="menu__item"><a href="#">Заказать звонок</a></li>
-                        </ul>
-                      </nav>
+                <div class="container d-flex">
+                    <div class="menu__left col-lg-8 d-none d-lg-block">
+                        <nav>
+                            <ul class="menu d-flex justify-content-between align-items-center">
+                                <li class="menu__item"><a href="#">Компьютеры</a></li>
+                                <li class="menu__item"><a href="#">Телевидение</a></li>
+                                <li class="menu__item"><a href="#">Фото и видео</a></li>
+                                <li class="menu__item"><a href="#">Канцелярские товары</a></li>
+                                <li class="menu__item"><a href="#">Заказать звонок</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="menu__right d-lg-flex align-items-center col-lg-4 d-none">
+                        <a href="#" style="padding-right: 10%"><img src="img/menu.png"> </a>
+                        <a href="#">Быстрая заявка</a>
+                    </div>
+                    <div class="header__toggle d-block d-lg-none" onclick="toggleStyle();">≡</div>
                 </div>
-                <div class="menu__right d-lg-flex align-items-center col-lg-3 d-none">
-                    <a href="#" style="padding-right: 10%"><img src="img/menu.png"> </a>
-                    <a href="#">Быстрая заявка</a>
-                </div>
-                <div class="header__toggle d-block d-lg-none" onclick="toggleStyle();">≡</div>
+
             </div>
             <div class="mobile__menu mobile__no justify-content-center d-lg-none " id="mobile__menu">
                 <nav>
@@ -43,47 +44,48 @@
                 </nav>
             </div>
             <div class="row header__items d-flex d-lg-flex justify-content-lg-center align-items-lg-center">
-                <div class="header__item col-lg-3 d-lg-flex d-flex justify-content-center justify-content-lg-end">
-                    <img src="img/logo.png">
-                    <div class="header__logo">
-                        <div class="logo__info">
-                            Центр информационных технологий
-                        </div>
-                        <div class="logo__name">
-                            СТАЛКЕР
-                        </div>
-                    </div>
-                </div>
-                <div class="header__item col-lg-3 d-lg-flex d-none justify-content-between">
-                    <img src="img/logo2.png" height="30" width="30">
-                    <div class="header__work">
-                        <div class="work__time">
-                            Режим работы с 8:00 до 19:00
-                        </div>
-                        <div class="work__address">
-                            пгт Апастово, ул. Гагарина, дом 4
+                <div class="container d-flex d-lg-flex justify-content-lg-around">
+                    <div class="header__item col-lg-3 d-lg-flex d-flex justify-content-around">
+                        <img src="img/logo.png">
+                        <div class="header__logo">
+                            <div class="logo__info">
+                                Центр информационных технологий
+                            </div>
+                            <div class="logo__name">
+                                СТАЛКЕР
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="header__item col-lg-2  d-none d-lg-flex justify-content-lg-between">
-                    <img src="img/logo3.png" height="30" width="30">
-                    <div class="header__phone">
-                        <div class="phone__info">
-                            Позвоните нам!
-                        </div>
-                        <div class="phone__number" >
-                            <a href="tel:+78437621200"> 8 (84376) 21-200</a>
+                    <div class="header__item col-lg-3 d-lg-flex d-none justify-content-lg-center">
+                        <img src="img/logo2.png" height="30" width="30">
+                        <div class="header__work">
+                            <div class="work__time">
+                                Режим работы с 8:00 до 19:00
+                            </div>
+                            <div class="work__address">
+                                пгт Апастово, ул. Гагарина, дом 4
+                            </div>
                         </div>
                     </div>
+                    <div class="header__item col-lg-2  d-none d-lg-flex justify-content-lg-center">
+                        <img src="img/logo3.png" height="30" width="30">
+                        <div class="header__phone">
+                            <div class="phone__info">
+                                Позвоните нам!
+                            </div>
+                            <div class="phone__number" >
+                                <a href="tel:+78437621200"> 8 (84376) 21-200</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__social col-lg-2 d-flex justify-content-center justify-content-lg-around">
+                        <a href="#"><img src="img/vk.png" height="15" width="20"></a>
+                        <a href="#"><img src="img/inst.png" height="15" width="20"></a>
+                        <a href="#"><img src="img/wats.png" height="15" width="20"></a>
+                    </div>
                 </div>
-                <div class="header__social col-lg-2 d-flex justify-content-center justify-content-lg-around">
-                    <a href="#"><img src="img/vk.png" height="15" width="20"></a>
-                    <a href="#"><img src="img/inst.png" height="15" width="20"></a>
-                    <a href="#"><img src="img/wats.png" height="15" width="20"></a>
-                </div>
+
             </div>
-        </div>
-    </div>
 </header>
 <!-- BANNER -->
 <div class="banner">

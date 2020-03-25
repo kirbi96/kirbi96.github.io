@@ -28,8 +28,20 @@ ul{
     background-color: #3959e0;
 }
 .menu__right{
-    padding-top: 19px;
-    padding-bottom: 19px;
+   position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    margin-right: 0;
+}
+.menu__right:before{
+    content: "";
+    position: absolute;
+    right: -100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
     background-color: #ffdc76;
 }
 .menu__item a{
@@ -47,7 +59,12 @@ ul{
 .header__items{
     margin-top: 30px;
 }
-
+.header__work{
+    margin-left: 10px;
+}
+.header__phone{
+    margin-left: 10px;
+}
 .logo__info{
     color: #3251d2;
     font-weight: 600;
@@ -324,8 +341,7 @@ ul{
     .banner__item1 p{
         color: white;
         width: 80%;
-        font-size: 5vh;
-        margin-top: 5vh;
+        font-size: 38px;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
@@ -433,4 +449,16 @@ ul{
         margin-left: 0;
     }
 
+
+}
+@media (min-width: 989.99px) and (max-width: 1300.99px) {
+
+    .banner__item1 p{
+        color: white;
+        width: 80%;
+        font-size: 36px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
