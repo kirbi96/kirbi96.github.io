@@ -18,7 +18,7 @@ ul{
 }
 
 
-/**---- HEADER ----*/
+/**----- HEADER -----*/
 
 .header__menu{
     background-color: #3959e0;
@@ -215,7 +215,7 @@ z-index: 1;
 }
 
 .banner__btn{
-    display: flex;
+    display: inline-flex;
     align-items: center;
     background-color: #ffdc76;
     font-size: 16px;
@@ -491,14 +491,6 @@ footer{
     .services__item{
         margin-top: 40px;
     }
-    /*.services__btn{*/
-    /*    margin-top: 30px;*/
-    /*    background-color: #ffdc76;*/
-    /*    width: 50%;*/
-    /*    padding: 10px;*/
-    /*    margin-left: auto;*/
-    /*    margin-right: auto;*/
-    /*}*/
     .services__title{
         font-size: 34px;
         text-align: center;
@@ -506,14 +498,15 @@ footer{
         font-weight: bold;
     }
     .services__info p{
-        margin-top: 18px;;
+        margin-top: 18px;
     }
     .services__img img{
         width: 250px;
         height: 200px;
-
     }
-
+    .services__info a{
+        margin: 20px auto;
+    }
     /**----- footer -----*/
     .footer__download{
         font-size: 20px;
