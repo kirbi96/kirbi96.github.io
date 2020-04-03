@@ -1,0 +1,89 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-image: url("img/pull.jpg");
+}
+
+.total{
+	margin: 10px;
+	font-size: 32px;
+	color: white;
+	font-family: "Myriad Pro", sans-serif;
+}
+
+.table{
+	margin: 10px;
+	display: flex;
+}
+
+.left__table{
+margin-top: 20vh;
+	padding-bottom: 20vh;
+}
+
+.right__table{
+	font-size: 18px;
+	color: white;
+	font-family: "Myriad Pro", sans-serif;
+	margin-left: 5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+
+.point,.point_c{
+}
+.comp{
+	display: flex;
+}
+
+.user{
+	display: flex;
+}
+
+
+.user img{
+	height: 200px;
+	margin-left: 5px;
+}
+
+.comp img{
+	height: 200px;
+	margin-left: 5px;
+}
+
+
+.crup__buttons{
+	display: flex;
+	flex-direction: column;
+}
+
+.crup__buttons div{
+	font-weight: bold;
+	font-size: 14px;
+	margin-top: 15px;
+	padding: 5px 10px;
+	border-radius: 5px;
+	color:  black;
+	cursor: pointer;
+	background-color: silver;
+	border: 3px solid black;
+	font-family: "Myriad Pro" , sans-serif;
+}
+
+
+#rub{
+	position: relative;
+}
+
+.rub2{
+	z-index: -1;
+	margin-left: 10px;
+	position: absolute;
+	left: 0;
+}
