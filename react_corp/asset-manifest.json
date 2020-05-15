@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/react_corp/static/css/main.90c59832.chunk.css",
-    "main.js": "/react_corp/static/js/main.0f2bc690.chunk.js",
-    "main.js.map": "/react_corp/static/js/main.0f2bc690.chunk.js.map",
+    "main.css": "/react_corp/static/css/main.eb0e27da.chunk.css",
+    "main.js": "/react_corp/static/js/main.9866bb19.chunk.js",
+    "main.js.map": "/react_corp/static/js/main.9866bb19.chunk.js.map",
     "runtime-main.js": "/react_corp/static/js/runtime-main.66f666b9.js",
     "runtime-main.js.map": "/react_corp/static/js/runtime-main.66f666b9.js.map",
     "static/css/2.75e2019a.chunk.css": "/react_corp/static/css/2.75e2019a.chunk.css",
     "static/js/2.af09fbd3.chunk.js": "/react_corp/static/js/2.af09fbd3.chunk.js",
     "static/js/2.af09fbd3.chunk.js.map": "/react_corp/static/js/2.af09fbd3.chunk.js.map",
     "index.html": "/react_corp/index.html",
-    "precache-manifest.993ade8b6a2ea5567bd8776c1f2c6ef3.js": "/react_corp/precache-manifest.993ade8b6a2ea5567bd8776c1f2c6ef3.js",
+    "precache-manifest.bc26861c1e3b6d9f51179f2048f841c2.js": "/react_corp/precache-manifest.bc26861c1e3b6d9f51179f2048f841c2.js",
     "service-worker.js": "/react_corp/service-worker.js",
     "static/css/2.75e2019a.chunk.css.map": "/react_corp/static/css/2.75e2019a.chunk.css.map",
-    "static/css/main.90c59832.chunk.css.map": "/react_corp/static/css/main.90c59832.chunk.css.map",
+    "static/css/main.eb0e27da.chunk.css.map": "/react_corp/static/css/main.eb0e27da.chunk.css.map",
     "static/js/2.af09fbd3.chunk.js.LICENSE.txt": "/react_corp/static/js/2.af09fbd3.chunk.js.LICENSE.txt",
     "static/media/api.jpg": "/react_corp/static/media/api.9c05deba.jpg",
     "static/media/instagram.png": "/react_corp/static/media/instagram.0629fc68.png",
@@ -34,7 +34,7 @@
     "static/js/runtime-main.66f666b9.js",
     "static/css/2.75e2019a.chunk.css",
     "static/js/2.af09fbd3.chunk.js",
-    "static/css/main.90c59832.chunk.css",
-    "static/js/main.0f2bc690.chunk.js"
+    "static/css/main.eb0e27da.chunk.css",
+    "static/js/main.9866bb19.chunk.js"
   ]
 }
