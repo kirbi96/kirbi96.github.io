@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/telecom/static/css/main.f84a50f2.chunk.css",
+    "main.js": "/telecom/static/js/main.0457ce50.chunk.js",
+    "main.js.map": "/telecom/static/js/main.0457ce50.chunk.js.map",
+    "runtime-main.js": "/telecom/static/js/runtime-main.8ba3b811.js",
+    "runtime-main.js.map": "/telecom/static/js/runtime-main.8ba3b811.js.map",
+    "static/css/2.150d169a.chunk.css": "/telecom/static/css/2.150d169a.chunk.css",
+    "static/js/2.575d4a26.chunk.js": "/telecom/static/js/2.575d4a26.chunk.js",
+    "static/js/2.575d4a26.chunk.js.map": "/telecom/static/js/2.575d4a26.chunk.js.map",
+    "static/js/3.bc195712.chunk.js": "/telecom/static/js/3.bc195712.chunk.js",
+    "static/js/3.bc195712.chunk.js.map": "/telecom/static/js/3.bc195712.chunk.js.map",
+    "index.html": "/telecom/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/telecom/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.f84a50f2.chunk.css.map": "/telecom/static/css/main.f84a50f2.chunk.css.map",
+    "static/js/2.575d4a26.chunk.js.LICENSE.txt": "/telecom/static/js/2.575d4a26.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8ba3b811.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.575d4a26.chunk.js",
+    "static/css/main.f84a50f2.chunk.css",
+    "static/js/main.0457ce50.chunk.js"
+  ]
+}
